@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.h1{
+    margin-bottom: 20px;
+}
+  
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 500px;
+
+}
+.todo {
+    background-color: #2c3e50;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    text-align: center; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+#taskInput, #addTaskButton {
+    width: 100%;
+}
+  
+  
+#taskInput {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+  
+  
+#addTaskButton {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+  
+#addTaskButton:hover {
+    background-color: #1abc9c;
+}
+  
+.taskItem {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+  
+.taskItem span {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+    word-break: break-word;
+}
+  
+.taskItem .checkmark {
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+  
+.taskItem.completed .checkmark {
+    background-color: #2ecc71;
+    color: white;
+}
+  
+.taskItem.completed .checkmark::after {
+    content: '✔';
+}
+  
+.taskItem button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+  
+.taskItem button:hover {
+    background-color: aquamarine;
+}
+
+  
+.taskItem .editButton {
+  background-color: orange;
+}
+
+
+
+
+
+.button {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px;
+}
+
+#clearButton {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #A52A2A; 
+  font-size: 20px;
+  color: white; 
+  cursor: pointer;
+  width: 100%; 
+}
+
+#clearButton:hover {
+  background-color:green; 
+}
